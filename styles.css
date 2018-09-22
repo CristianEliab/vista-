@@ -1,0 +1,267 @@
+ /* Cuerpo del div inicio */
+body{
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+}
+
+/* Tabla agrupación de estas y su distribución*/
+
+
+i.fas.fa-circle.btn{
+    margin-left: 40%;
+    color: blue;
+    text-align: center;
+}
+
+.table.table-bordered{
+    border-color: blue;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border: 1px solid #d9d7ce;
+}
+
+
+.rtable th,
+      .rtable td {
+        padding: 0%;
+        border: 1px solid #d9d7ce;
+
+} 
+
+
+.table td, .table th {
+    padding: 1.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+/*Descripción de la tabla*/
+
+
+.tabla-agrupada{
+    size: 10em;
+}
+
+
+#titulo-esquema{
+    color: #312f2f;
+    background-color: slategray;
+    text-align: center;
+}
+
+#descripcion-esquema{
+    color: #312f2f;
+    background-color: red;
+    text-align: center;
+}
+
+.col-dosis{
+    text-align: center;
+}
+
+.col-vacunas{
+    text-align: center;
+}
+
+.vacunas-filas{
+    text-align: center;
+    font-size: 1.2em !important;
+}
+
+.periodicidad{
+    text-align: center;
+}
+
+th{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+td{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#v-track{
+    font-size: 3em;
+}
+
+#txt-carne{
+    font-size: 3em;
+}
+
+
+@media (max-width: 800px) {
+    th {font-size: 1em;  text-align: center}
+    td {font-size: 1em;  text-align: center}
+    .vacunas-filas{font-size: 1.2em !important}
+    #v-track {font-size: 2.5em}
+    #txt-carne {font-size: 2.5em}
+ }
+
+ @media (max-width: 640px) {
+    th {font-size: 0.8em;  text-align: center}
+    td {font-size: 0.8em;  text-align: center}
+    .vacunas-filas{font-size: 1.2em !important}
+    #v-track {font-size: 2em}
+    #txt-carne {font-size: 2em}
+    
+
+    .table thead th {
+        display: inline;
+        vertical-align: bottom;
+        padding: 20%;
+        font-size: 95%;
+        margin: unset;
+        border: 1px solid #d9d7ce;
+    }
+
+    .rtable {
+        /*!
+        // IE needs inline-block to position scrolling shadows otherwise use:
+        // display: block;
+        // max-width: min-content;
+        */
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      
+      .rtable,
+      .rtable--flip tbody {
+        -webkit-overflow-scrolling: touch;
+        background: radial-gradient(left, ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(right, ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background-size: 10px 100%, 10px 100%;
+        background-attachment: scroll, scroll;
+        background-repeat: no-repeat;
+      }
+      
+      .rtable td:first-child,
+      .rtable--flip tbody tr:first-child {
+        background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-size: 20px 100%;
+      }
+      
+      .rtable td:last-child,
+      .rtable--flip tbody tr:last-child {
+        background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: 20px 100%;
+      }
+      
+      .rtable th {
+        font-size: 5%;
+      }
+      
+      .rtable th,
+      .rtable td {
+        padding: 0%;
+        border: 1px solid #d9d7ce;
+      }
+      
+      .rtable--flip {
+        display: flex;
+        overflow: hidden;
+        background: none;
+      }
+      
+      .rtable--flip thead {
+        display: flex;
+        flex-shrink: 0;
+        min-width: -webkit-min-content;
+        min-width: -moz-min-content;
+        min-width: min-content;
+      }
+      
+      .rtable--flip tbody {
+        display: flex;
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      
+      .rtable--flip tr {
+        display: flex;
+        flex-direction: column;
+        min-width: -webkit-min-content;
+        min-width: -moz-min-content;
+        min-width: min-content;
+        flex-shrink: 0;
+        padding: 0%;
+      }
+      
+      .rtable--flip td,
+      .rtable--flip th {
+        display: block;
+      }
+      
+      .rtable--flip td {
+        background-image: none !important;
+        border-left: 0;
+      }
+ }
+
+ /* Barra del menu */
+ .navbar-custom {
+    background: rgb(131, 127, 127);
+}
+a.navbar-brand{
+    width: 16%;
+    font-size: 109%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+.custom-colors {
+    background-color: #ecf0f1;
+    color: #ecf0f1;
+}
+
+
+/* Distribución de los componentes*/
+
+.tabla-agrupada{
+    padding: 5%;
+}
+
+#banner{
+    float: right;
+    width: 80%;
+    background-color: blue;
+}
+
+#menu{
+    float: left;
+    width: 20%;
+    height: 1000px;
+    background-color: rgb(95, 95, 243);
+}
+
+#container{
+    float: right;
+    width: 80%;
+}
+
+h3{
+    color: black;
+}
+
+.display-4 {
+    margin: auto;
+    color: black;
+}
+div.milayer.my-3{
+    position: relative;
+}
+.mila{
+    position: relative;
+    text-align: center;
+}
